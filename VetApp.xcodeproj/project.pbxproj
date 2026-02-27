@@ -6,11 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA9B00242F512C290009A947 /* UI in Frameworks */ = {isa = PBXBuildFile; productRef = FA9B00232F512C290009A947 /* UI */; };
+		FA9B002A2F5130160009A947 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA9B00292F5130160009A947 /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FA9BFFD22F51102E0009A947 /* VetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA9B00172F5124210009A947 /* Exceptions for "Frameworks" folder in "VetApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UI,
+			);
+			target = FA9BFFD12F51102E0009A947 /* VetApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA9B00152F5123DB0009A947 /* Frameworks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA9B00172F5124210009A947 /* Exceptions for "Frameworks" folder in "VetApp" target */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA9BFFD42F51102E0009A947 /* VetApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VetApp;
@@ -23,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9B002A2F5130160009A947 /* RealmSwift in Frameworks */,
+				FA9B00242F512C290009A947 /* UI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +57,7 @@
 		FA9BFFC92F51102E0009A947 = {
 			isa = PBXGroup;
 			children = (
+				FA9B00152F5123DB0009A947 /* Frameworks */,
 				FA9BFFD42F51102E0009A947 /* VetApp */,
 				FA9BFFD32F51102E0009A947 /* Products */,
 			);
@@ -61,10 +87,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				FA9B00152F5123DB0009A947 /* Frameworks */,
 				FA9BFFD42F51102E0009A947 /* VetApp */,
 			);
 			name = VetApp;
 			packageProductDependencies = (
+				FA9B00232F512C290009A947 /* UI */,
+				FA9B00292F5130160009A947 /* RealmSwift */,
 			);
 			productName = VetApp;
 			productReference = FA9BFFD22F51102E0009A947 /* VetApp.app */;
@@ -94,6 +123,9 @@
 			);
 			mainGroup = FA9BFFC92F51102E0009A947;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA9B00262F5130160009A947 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FA9BFFD32F51102E0009A947 /* Products */;
 			projectDirPath = "";
@@ -261,6 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -272,7 +305,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +338,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +366,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA9B00262F5130160009A947 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA9B00232F512C290009A947 /* UI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UI;
+		};
+		FA9B00292F5130160009A947 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA9B00262F5130160009A947 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA9BFFCA2F51102E0009A947 /* Project object */;
 }

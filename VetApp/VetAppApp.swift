@@ -11,7 +11,71 @@ import SwiftUI
 struct VetAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabsView()
         }
     }
 }
+
+//App/
+//│
+//├── App.swift
+//├── Root/
+//│   ├── RootTabsView.swift
+//│   ├── AppContainer.swift
+//│   └── DeepLinkHandler.swift
+//│
+//├── Core/
+//│   ├── Navigation/
+//│   │   ├── Router.swift
+//│   │   ├── Routes.swift
+//│   │   └── NavigationProtocols.swift
+//│   │
+//│   ├── Networking/
+//│   │   ├── APIClient.swift
+//│   │   ├── Endpoints.swift
+//│   │   └── NetworkError.swift
+//│   │
+//│   ├── Database/
+//│   │   ├── Realm/
+//│   │   │   ├── RealmConfiguration.swift
+//│   │   │   ├── PostObject.swift
+//│   │   │   └── RealmPostsStore.swift
+//│   │   └── DatabaseProtocols.swift
+//│   │
+//│   ├── Analytics/
+//│   │   └── Analytics.swift
+//│   │
+//│   └── Extensions/
+//│
+//├── Features/
+//│   ├── Home/
+//│   │   ├── Domain/
+//│   │   │   ├── Post.swift
+//│   │   │   └── HomeUseCases.swift
+//│   │   │
+//│   │   ├── Data/
+//│   │   │   ├── PostsRepository.swift
+//│   │   │   ├── CachedPostsRepository.swift
+//│   │   │   └── RemotePostsDataSource.swift
+//│   │   │
+//│   │   ├── Presentation/
+//│   │   │   ├── HomeView.swift
+//│   │   │   ├── HomeViewModel.swift
+//│   │   │   └── HomeNavHost.swift
+//│   │   │
+//│   │   └── Components/
+//│   │
+//│   ├── Search/
+//│   │   ├── Domain/
+//│   │   ├── Data/
+//│   │   └── Presentation/
+//│   │
+//│   └── Profile/
+//│       ├── Domain/
+//│       ├── Data/
+//│       └── Presentation/
+//│
+//└── Shared/
+//    ├── UI/
+//    ├── Components/
+//    └── Helpers/
