@@ -35,7 +35,7 @@ The project follows a structured and scalable architecture:
 
 ---
 
-## 🏗 Project Structure
+## 🏗 Project Structure (reaaaally short version)
 
 ```
 App/
