@@ -1,5 +1,5 @@
 //
-//  MedicationStore.swift
+//  MedicationsStore.swift
 //  VetApp
 //
 //  Created by Santiago Mendoza on 26/2/26.

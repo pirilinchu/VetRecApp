@@ -29,12 +29,23 @@ extension HomeView {
         func createMedication() {
             Task {
                 try? await saveMedicationUseCase.execute(buildMedication())
+                cleanData()
                 goToMedication()
             }
         }
         
         func goToMedication() {
             navigator?.goToMedication(medication: buildMedication())
+        }
+        
+        func cleanData() {
+            petName = ""
+            medicationName = ""
+            dosage = ""
+            frequency = .onceDaily
+            notes = ""
+            startDate = Date()
+            duration = ""
         }
         
         private func buildMedication() -> Medication {
